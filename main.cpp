@@ -40,6 +40,7 @@ int m_fib(int n){
     if(F[n-1] == -1){
       F[n-1] = m_fib(n - 1);
     }
+    F[n] = F[n-2] + F[n - 1];
     return F[n-2] + F[n-1];
   }
 }
